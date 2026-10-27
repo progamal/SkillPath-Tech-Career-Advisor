@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#10182B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imgResult"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/ic_trophy"
+            android:contentDescription="Career achievement"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✦ YOUR RESULTS"
+            android:textColor="#A78BFA"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Tech Career Match"
+            android:textColor="#FFFFFF"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Based on your interests, these paths may be a great fit for you."
+            android:textColor="#A5B4CF"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="35dp" />
+
+        <!-- Top Career Match -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/bg_top_match">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="★ TOP MATCH"
+                android:textColor="#C4B5FD"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTopCareer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Analyst"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/tvTopDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discover patterns, analyze information, and turn data into useful insights."
+                android:textColor="#CBD5E1"
+                android:textSize="15sp"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/tvTopScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Match Score: 0 / 8"
+                android:textColor="#A78BFA"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="22dp" />
+
+        </LinearLayout>
+
+        <!-- Second Career Match -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Second Match"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/bg_second_match">
+
+            <TextView
+                android:id="@+id/tvSecondCareer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Software Developer"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvSecondDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Build applications and create solutions through programming."
+                android:textColor="#CBD5E1"
+                android:textSize="14sp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/tvSecondScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Match Score: 0 / 8"
+                android:textColor="#C4B5FD"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+
+        <!-- Action Buttons -->
+        <Button
+            android:id="@+id/btnCareerDetails"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Explore Career Details →"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:backgroundTint="#7C3AED"
+            android:layout_marginTop="35dp" />
+
+        <Button
+            android:id="@+id/btnRetake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retake Assessment"
+            android:textAllCaps="false"
+            android:textColor="#C4B5FD"
+            android:backgroundTint="#293453"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>

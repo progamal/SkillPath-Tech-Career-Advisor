@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#10182B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Page Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EXPLORE YOUR FUTURE"
+            android:textColor="#A78BFA"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="36dp" />
+
+        <TextView
+            android:id="@+id/tvCareerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Analyst"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discover what this career is all about"
+            android:textColor="#C4B5FD"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="32dp" />
+
+        <!-- About This Career Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/bg_top_match">
+
+            <!-- About Title With Icon -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/ic_career"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Career icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About This Career"
+                    android:textColor="#C4B5FD"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="12dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCareerDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discover insights and help organizations make better decisions."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:lineSpacingExtra="6dp"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+        <!-- Skills Section Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_skills"
+                android:scaleType="fitCenter"
+                android:contentDescription="Skills icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills to Learn"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp" />
+
+        </LinearLayout>
+
+        <!-- Skills Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/bg_second_match">
+
+            <TextView
+                android:id="@+id/tvCareerSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Excel&#10;• SQL&#10;• Python&#10;• Power BI"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:lineSpacingExtra="12dp" />
+
+        </LinearLayout>
+
+        <!-- Next Steps Section Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="15dp">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_steps"
+                android:scaleType="fitCenter"
+                android:contentDescription="Next steps icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Next Steps"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginStart="12dp" />
+
+        </LinearLayout>
+
+        <!-- Next Steps Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp"
+            android:background="@drawable/bg_second_match">
+
+            <TextView
+                android:id="@+id/tvNextSteps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Learn the fundamentals&#10;2. Practice your skills&#10;3. Build a small project"
+                android:textColor="#CBD5E1"
+                android:textSize="16sp"
+                android:lineSpacingExtra="10dp" />
+
+        </LinearLayout>
+
+        <!-- Back to Results Button -->
+        <Button
+            android:id="@+id/btnBackResults"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Back to Results"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:backgroundTint="#7C3AED"
+            android:layout_marginTop="32dp" />
+
+        <!-- Back to Home Button -->
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Home"
+            android:textAllCaps="false"
+            android:textColor="#C4B5FD"
+            android:backgroundTint="#293453"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="25dp" />
+
+    </LinearLayout>
+
+</ScrollView>

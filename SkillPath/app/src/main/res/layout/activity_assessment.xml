@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#10182B">
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 1 of 8"
+        android:textColor="#C4B5FD"
+        android:textSize="15sp"
+        android:layout_marginTop="28dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:max="8"
+        android:progress="1"
+        android:progressTint="#8B5CF6"
+        android:progressBackgroundTint="#293453"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What do you enjoy the most?"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="27sp"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the option that best describes you."
+        android:textColor="#A5B4CF"
+        android:textSize="15sp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="28dp" />
+
+    <RadioGroup
+        android:id="@+id/rgAnswers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:id="@+id/rbOption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Analyzing data and finding patterns"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:button="@null"
+            android:background="@drawable/answer_background"            android:padding="18dp"
+            android:drawableStart="@drawable/ic_data"
+            android:drawablePadding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <RadioButton
+            android:id="@+id/rbOption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Building applications and writing code"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:button="@null"
+            android:background="@drawable/answer_background"            android:padding="18dp"
+            android:drawableStart="@drawable/ic_code"
+            android:drawablePadding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <RadioButton
+            android:id="@+id/rbOption3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Protecting systems and solving security challenges"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:button="@null"
+            android:background="@drawable/answer_background"            android:padding="18dp"
+            android:drawableStart="@drawable/ic_security"
+            android:drawablePadding="14dp"
+            android:layout_marginBottom="12dp" />
+
+        <RadioButton
+            android:id="@+id/rbOption4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Designing creative and user-friendly interfaces"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:button="@null"
+            android:background="@drawable/answer_background"            android:padding="18dp"
+            android:drawableStart="@drawable/ic_design"
+            android:drawablePadding="14dp" />
+
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Next →"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:backgroundTint="#7C3AED"
+        android:layout_marginBottom="20dp" />
+
+</LinearLayout>
