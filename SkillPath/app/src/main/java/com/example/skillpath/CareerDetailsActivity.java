@@ -1,7 +1,12 @@
 package com.example.skillpath;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.RelativeSizeSpan;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -49,6 +54,7 @@ public class CareerDetailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_career_details);
 
         int careerIndex = getIntent().getIntExtra("careerIndex", 0);
@@ -57,28 +63,92 @@ public class CareerDetailsActivity extends AppCompatActivity {
             careerIndex = 0;
         }
 
-        TextView tvCareerTitle = findViewById(R.id.tvCareerTitle);
-        TextView tvCareerDescription = findViewById(R.id.tvCareerDescription);
-        TextView tvCareerSkills = findViewById(R.id.tvCareerSkills);
-        TextView tvNextSteps = findViewById(R.id.tvNextSteps);
+        TextView tvCareerTitle =
+                findViewById(R.id.tvCareerTitle);
 
+        TextView tvCareerDescription =
+                findViewById(R.id.tvCareerDescription);
+
+        TextView tvCareerSkills =
+                findViewById(R.id.tvCareerSkills);
+
+        TextView tvNextSteps =
+                findViewById(R.id.tvNextSteps);
+
+        // Set career information
         tvCareerTitle.setText(careers[careerIndex]);
-        tvCareerDescription.setText(descriptions[careerIndex]);
-        tvCareerSkills.setText(skills[careerIndex]);
+
+        tvCareerDescription.setText(
+                descriptions[careerIndex]
+        );
+
+        // Display skills with larger purple bullets
+        setColoredSkills(
+                tvCareerSkills,
+                skills[careerIndex]
+        );
+
         tvNextSteps.setText(nextSteps[careerIndex]);
 
-        Button btnBackResults = findViewById(R.id.btnBackResults);
+        // Back to Results
+        Button btnBackResults =
+                findViewById(R.id.btnBackResults);
+
         btnBackResults.setOnClickListener(v -> finish());
 
-        Button btnHome = findViewById(R.id.btnHome);
+        // Back to Home
+        Button btnHome =
+                findViewById(R.id.btnHome);
+
         btnHome.setOnClickListener(v -> {
-            Intent intent = new Intent(this, MainActivity.class);
+
+            Intent intent =
+                    new Intent(this, MainActivity.class);
+
             intent.addFlags(
                     Intent.FLAG_ACTIVITY_CLEAR_TOP |
                             Intent.FLAG_ACTIVITY_SINGLE_TOP
             );
+
             startActivity(intent);
             finish();
         });
+    }
+
+    // Display larger purple bullet points
+    private void setColoredSkills(
+            TextView textView,
+            String skillsText
+    ) {
+
+        SpannableString styledSkills =
+                new SpannableString(skillsText);
+
+        int purpleColor =
+                Color.parseColor("#A78BFA");
+
+        for (int i = 0; i < skillsText.length(); i++) {
+
+            if (skillsText.charAt(i) == '•') {
+
+                // Purple bullet color
+                styledSkills.setSpan(
+                        new ForegroundColorSpan(purpleColor),
+                        i,
+                        i + 1,
+                        Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+                );
+
+                // Increase bullet size by 40%
+                styledSkills.setSpan(
+                        new RelativeSizeSpan(1.4f),
+                        i,
+                        i + 1,
+                        Spanned.SPAN_EXCLUSIVE_EXCLUSIVE
+                );
+            }
+        }
+
+        textView.setText(styledSkills);
     }
 }
