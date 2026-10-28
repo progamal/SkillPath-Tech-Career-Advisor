@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Selected Radio Button -->
+    <item android:state_checked="true">
+        <layer-list>
+
+            <!-- Outer Circle -->
+            <item>
+                <shape android:shape="oval">
+                    <size
+                        android:width="22dp"
+                        android:height="22dp" />
+
+                    <solid android:color="#34245C" />
+
+                    <stroke
+                        android:width="2dp"
+                        android:color="#A78BFA" />
+                </shape>
+            </item>
+
+            <!-- Inner Purple Dot -->
+            <item
+                android:left="6dp"
+                android:right="6dp"
+                android:top="6dp"
+                android:bottom="6dp">
+
+                <shape android:shape="oval">
+                    <solid android:color="#A78BFA" />
+                </shape>
+
+            </item>
+
+        </layer-list>
+    </item>
+
+    <!-- Unselected Radio Button -->
+    <item>
+        <shape android:shape="oval">
+
+            <size
+                android:width="22dp"
+                android:height="22dp" />
+
+            <solid android:color="@android:color/transparent" />
+
+            <stroke
+                android:width="2dp"
+                android:color="#53658F" />
+
+        </shape>
+    </item>
+
+</selector>
