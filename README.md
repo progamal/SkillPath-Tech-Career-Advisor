@@ -3,7 +3,8 @@
 
 ### Discover Your Path in Technology 🚀
 
-<img width="6000" height="3375" alt="skillpath-screens png" src="https://github.com/user-attachments/assets/929a0c4b-f5c0-4871-bf86-baab71b5a1e1" />
+<img width="4320" height="2430" alt="gi (1)" src="https://github.com/user-attachments/assets/9dacfbff-f690-483c-9b4d-a6284006f12f" />
+
 
 SkillPath is an interactive Android application designed to help students and beginners discover technology career paths that align with their interests.
 
