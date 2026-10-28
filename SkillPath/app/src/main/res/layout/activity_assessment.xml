@@ -52,17 +52,20 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
         <RadioButton
             android:id="@+id/rbOption1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="60dp"
             android:text="Analyzing data and finding patterns"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
+            android:gravity="center_vertical"
             android:button="@null"
-            android:background="@drawable/answer_background"            android:padding="18dp"
+            android:background="@drawable/answer_background"
+            android:padding="18dp"
             android:drawableStart="@drawable/ic_data"
+            android:drawableEnd="@drawable/radio_circle"
             android:drawablePadding="14dp"
             android:layout_marginBottom="12dp" />
 
@@ -70,12 +73,16 @@
             android:id="@+id/rbOption2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="60dp"
             android:text="Building applications and writing code"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
+            android:gravity="center_vertical"
             android:button="@null"
-            android:background="@drawable/answer_background"            android:padding="18dp"
+            android:background="@drawable/answer_background"
+            android:padding="18dp"
             android:drawableStart="@drawable/ic_code"
+            android:drawableEnd="@drawable/radio_circle"
             android:drawablePadding="14dp"
             android:layout_marginBottom="12dp" />
 
@@ -83,12 +90,16 @@
             android:id="@+id/rbOption3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="60dp"
             android:text="Protecting systems and solving security challenges"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
+            android:gravity="center_vertical"
             android:button="@null"
-            android:background="@drawable/answer_background"            android:padding="18dp"
+            android:background="@drawable/answer_background"
+            android:padding="18dp"
             android:drawableStart="@drawable/ic_security"
+            android:drawableEnd="@drawable/radio_circle"
             android:drawablePadding="14dp"
             android:layout_marginBottom="12dp" />
 
@@ -96,14 +107,17 @@
             android:id="@+id/rbOption4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="60dp"
             android:text="Designing creative and user-friendly interfaces"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
+            android:gravity="center_vertical"
             android:button="@null"
-            android:background="@drawable/answer_background"            android:padding="18dp"
+            android:background="@drawable/answer_background"
+            android:padding="18dp"
             android:drawableStart="@drawable/ic_design"
+            android:drawableEnd="@drawable/radio_circle"
             android:drawablePadding="14dp" />
-
 
     </RadioGroup>
 
